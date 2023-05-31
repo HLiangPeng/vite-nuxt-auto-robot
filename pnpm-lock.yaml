@@ -6,6 +6,7 @@ specifiers:
   tsup: ^6.7.0
   typescript: ^5.0.4
   vite: ^4.3.9
+  vite-nuxt-auto-sitemap: ^0.0.3
 
 dependencies:
   vite: 4.3.9_obdhjvr5oobxibltevv2mgd4be
@@ -15,6 +16,7 @@ devDependencies:
   terser: 5.17.6
   tsup: 6.7.0_typescript@5.0.4
   typescript: 5.0.4
+  vite-nuxt-auto-sitemap: 0.0.3_obdhjvr5oobxibltevv2mgd4be
 
 packages:
 
@@ -605,7 +607,6 @@ packages:
     resolution: {integrity: sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
-    dev: false
 
   /normalize-path/3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
@@ -654,7 +655,6 @@ packages:
 
   /picocolors/1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
-    dev: false
 
   /picomatch/2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
@@ -689,7 +689,6 @@ packages:
       nanoid: 3.3.6
       picocolors: 1.0.0
       source-map-js: 1.0.2
-    dev: false
 
   /punycode/2.3.0:
     resolution: {integrity: sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==}
@@ -754,7 +753,6 @@ packages:
   /source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
-    dev: false
 
   /source-map-support/0.5.21:
     resolution: {integrity: sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==}
@@ -879,6 +877,19 @@ packages:
     hasBin: true
     dev: true
 
+  /vite-nuxt-auto-sitemap/0.0.3_obdhjvr5oobxibltevv2mgd4be:
+    resolution: {integrity: sha512-Uli53rGJpYw614mDPkKgpMV8ZE9cGW00wSmklmvmvdrIpH0OhixkxztTJFoLu19E7wmHvMWHNosPA5A5T3m6Bg==}
+    dependencies:
+      vite: 4.3.9_obdhjvr5oobxibltevv2mgd4be
+    transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - sass
+      - stylus
+      - sugarss
+      - terser
+    dev: true
+
   /vite/4.3.9_obdhjvr5oobxibltevv2mgd4be:
     resolution: {integrity: sha512-qsTNZjO9NoJNW7KnOrgYwczm0WctJ8m/yqYAMAK9Lxt4SoySUfS5S8ia9K7JHpa3KEeMfyF8LoJ3c5NeBJy6pg==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -911,7 +922,6 @@ packages:
       terser: 5.17.6
     optionalDependencies:
       fsevents: 2.3.2
-    dev: false
 
   /webidl-conversions/4.0.2:
     resolution: {integrity: sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==}

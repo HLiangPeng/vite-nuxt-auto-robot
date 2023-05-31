@@ -11,9 +11,9 @@ interface paramsType {
 const getFiles = (dirPath: string) => {
   const pageFilesPath: string[] = []
   const getFile = (dirPath: string) => {
-    const files: string[] = fs.readdirSync(path.resolve(__dirname, dirPath))
+    const files: string[] = fs.readdirSync(path.join(process.cwd(), dirPath))
     files.forEach((f) => {
-      const currentFileStat = fs.statSync(path.resolve(__dirname, `${dirPath}/${f}`))
+      const currentFileStat = fs.statSync(path.join(process.cwd(), `${dirPath}/${f}`))
       if (f.includes('.vue') && currentFileStat) {
         return pageFilesPath.push(`${dirPath}/${f.slice(0, -4)}`)
       }
@@ -69,7 +69,7 @@ export default function viteNuxtAutoSitemap({
       const pageFilesPath = getFiles(dirPath)
       const urlContent = getUrlContent(pageFilesPath, dirPath, host)
       const sitemapContent = getSitemapContent(urlContent)
-      fs.writeFileSync(path.resolve(__dirname, sitemapOutPath), sitemapContent)
+      fs.writeFileSync(path.join(process.cwd(), sitemapOutPath), sitemapContent)
     },
   }
 }
