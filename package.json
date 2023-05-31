@@ -1,0 +1,34 @@
+{
+  "name": "vite-nuxt-auto-sitemap",
+  "version": "0.0.1",
+  "description": "sitemap auto generation for Nuxt3",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HLiangPeng/vite-nuxt-auto-sitemap"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "npm run build -- --watch src",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vite",
+    "nuxt3",
+    "robots",
+    "auto",
+    "generation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "terser": "^5.17.6",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "vite": "^4.3.9"
+  }
+}

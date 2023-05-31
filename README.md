@@ -1,2 +1,3 @@
-# vite-nuxt-auto-robot
-Nuxt3 automatically generates robot. txt file
+# vite-nuxt-auto-sitemap
+Nuxt3 automatically generates sitemap file
+
