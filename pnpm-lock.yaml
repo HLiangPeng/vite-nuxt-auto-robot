@@ -6,7 +6,7 @@ specifiers:
   tsup: ^6.7.0
   typescript: ^5.0.4
   vite: ^4.3.9
-  vite-nuxt-auto-sitemap: ^0.0.3
+  vite-nuxt-auto-sitemap: ^0.1.1
 
 dependencies:
   vite: 4.3.9_obdhjvr5oobxibltevv2mgd4be
@@ -16,7 +16,7 @@ devDependencies:
   terser: 5.17.6
   tsup: 6.7.0_typescript@5.0.4
   typescript: 5.0.4
-  vite-nuxt-auto-sitemap: 0.0.3_obdhjvr5oobxibltevv2mgd4be
+  vite-nuxt-auto-sitemap: 0.1.1_obdhjvr5oobxibltevv2mgd4be
 
 packages:
 
@@ -877,8 +877,8 @@ packages:
     hasBin: true
     dev: true
 
-  /vite-nuxt-auto-sitemap/0.0.3_obdhjvr5oobxibltevv2mgd4be:
-    resolution: {integrity: sha512-Uli53rGJpYw614mDPkKgpMV8ZE9cGW00wSmklmvmvdrIpH0OhixkxztTJFoLu19E7wmHvMWHNosPA5A5T3m6Bg==}
+  /vite-nuxt-auto-sitemap/0.1.1_obdhjvr5oobxibltevv2mgd4be:
+    resolution: {integrity: sha512-k9mEs0cWkN1yUHqMFFsi5DXII1Xh0xl/YFY3xuExEloPIgx/9zJHLpCIb8KnBm952e/HHc6BewMFQXLjWLzsTA==}
     dependencies:
       vite: 4.3.9_obdhjvr5oobxibltevv2mgd4be
     transitivePeerDependencies:

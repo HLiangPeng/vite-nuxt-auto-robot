@@ -1,6 +1,6 @@
 {
   "name": "vite-nuxt-auto-sitemap",
-  "version": "0.1.6",
+  "version": "0.1.1",
   "description": "sitemap auto generation for Nuxt3",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -30,7 +30,7 @@
     "terser": "^5.17.6",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4",
-    "vite-nuxt-auto-sitemap": "^0.0.3"
+    "vite-nuxt-auto-sitemap": "^0.1.1"
   },
   "dependencies": {
     "vite": "^4.3.9"

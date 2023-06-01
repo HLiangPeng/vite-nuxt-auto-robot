@@ -61,10 +61,10 @@ export default function viteNuxtAutoSitemap({
   host,
   dirPath = './pages',
   sitemapOutPath = './public/sitemap.xml',
-}: paramsType): Plugin {
+}: paramsType) {
   return {
     name: 'vite-nuxt-auto-sitemap',
-    apply: 'build',
+    // apply: 'build',
     buildStart() {
       const pageFilesPath = getFiles(dirPath)
       const urlContent = getUrlContent(pageFilesPath, dirPath, host)
