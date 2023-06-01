@@ -1,4 +1,5 @@
 # vite-nuxt-auto-sitemap
+
 Nuxt3 automatically generates sitemap file
 
 ## Usage
@@ -17,11 +18,11 @@ import autoSitemap from "vite-nuxt-auto-sitemap"
 
 export default {
   vite: {
-    plugins: process.env.NODE_ENV === 'production' ? [
+    plugins: process.env.NODE_ENV === 'production' ?
       viteNuxtautoSitemap({
         host: 'https://xxx.com'
       }),
-    ] : [],
+    : '',
   }
 };
 
