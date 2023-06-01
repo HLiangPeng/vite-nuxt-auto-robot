@@ -16,11 +16,13 @@ Add it to `nuxt.config.ts`
 import autoSitemap from "vite-nuxt-auto-sitemap"
 
 export default {
-  plugins: [
-    autoSitemap({
-      host: 'https://xxx.com'
-    })
-  ]
+  vite: {
+    plugins: process.env.NODE_ENV === 'production' ? [
+      viteNuxtautoSitemap({
+        host: 'https://xxx.com'
+      }),
+    ] : [],
+  }
 };
 
 ```
